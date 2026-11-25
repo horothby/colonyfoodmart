@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1080">
+<title>Colony Food Market Ad</title>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--lagoon:#12B3A5;--deep:#0B3B39;--teal:#0E7C73;--sun:#FFD400;--coral:#FF5B4A;--cream:#FFF9DE;--aqua:#7FE3D9}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--deep)}
+body{font-family:"Baloo 2",sans-serif;color:#fff}
+#stage{position:relative;width:1080px;height:1920px;overflow:hidden;
+  background:linear-gradient(170deg,#19C6C0 0%,#12B3A5 38%,#0E7C73 72%,#0B3B39 100%)}
+.sunball{position:absolute;border-radius:50%;background:radial-gradient(circle,#FFE44D 0%,#FFD400 55%,rgba(255,212,0,0) 72%)}
+.wave{position:absolute;left:-60px;width:1200px;height:220px}
+.scene{position:absolute;inset:0;opacity:0}
+.el{position:absolute;will-change:transform,opacity}
+.kicker{font-family:"Bungee";font-size:40px;letter-spacing:4px;color:var(--sun);
+  background:var(--deep);padding:10px 26px;border-radius:999px;left:50%;white-space:nowrap}
+.h1{font-family:"Bungee";font-size:112px;line-height:1.0;text-align:center;width:1000px;left:40px;
+  text-shadow:0 8px 0 rgba(11,59,57,.55)}
+.h1 .y{color:var(--sun)}
+.sub{font-weight:800;font-size:60px;line-height:1.1;text-align:center;width:1000px;left:40px;color:var(--cream);
+  text-shadow:0 4px 0 rgba(11,59,57,.5)}
+.card{border-radius:44px;overflow:hidden;background:#fff;border:14px solid #fff;
+  box-shadow:0 30px 60px rgba(11,59,57,.45)}
+.card img{width:100%;height:100%;object-fit:cover;display:block;border-radius:30px}
+.sticker{font-family:"Bungee";background:var(--sun);color:var(--deep);border-radius:999px;
+  padding:16px 34px;font-size:46px;box-shadow:0 10px 0 var(--deep);white-space:nowrap}
+.sticker.coral{background:var(--coral);color:#fff}
+.stars{font-size:96px;letter-spacing:6px;color:var(--sun);text-shadow:0 6px 0 var(--deep);text-align:center;width:1080px;left:0}
+.quote{font-weight:800;font-size:50px;line-height:1.15;text-align:center;width:900px;left:90px;color:var(--deep);
+  background:var(--cream);border-radius:36px;padding:28px 36px;box-shadow:0 14px 0 rgba(11,59,57,.4)}
+.info{left:70px;width:940px;background:rgba(11,59,57,.82);border-radius:36px;padding:34px 44px;font-size:46px;font-weight:800;line-height:1.25}
+.info b{color:var(--sun);font-family:"Bungee";font-weight:400;font-size:44px}
+.info .row{display:flex;gap:26px;align-items:center;margin:6px 0}
+.info .ic{width:66px;flex:0 0 66px;text-align:center}
+.wa{left:90px;width:900px;background:#25D366;border-radius:999px;padding:24px 0;text-align:center;
+  font-family:"Bungee";font-size:58px;color:#fff;box-shadow:0 12px 0 #128C4A}
+.wa small{display:block;font-family:"Baloo 2";font-weight:800;font-size:34px;letter-spacing:1px;margin-top:-6px}
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="sunball" id="sun" style="width:760px;height:760px"></div>
+  <svg class="wave" id="wave1" viewBox="0 0 1200 220" preserveAspectRatio="none"><path fill="rgba(255,255,255,.14)" d="M0 90 Q150 20 300 90 T600 90 T900 90 T1200 90 V220 H0Z"/></svg>
+  <svg class="wave" id="wave2" viewBox="0 0 1200 220" preserveAspectRatio="none"><path fill="rgba(11,59,57,.35)" d="M0 110 Q150 50 300 110 T600 110 T900 110 T1200 110 V220 H0Z"/></svg>
+
+  <!-- 1 Baby Beach -->
+  <section class="scene" data-start="0" data-end="3.6">
+    <div class="el kicker" data-a="drop" data-d=".1" style="top:150px">ARUBA · SAN NICOLAS</div>
+    <div class="el h1" data-a="up" data-d=".25" style="top:270px">GOING TO<br><span class="y">BABY BEACH?</span></div>
+    <div class="el sub" data-a="up" data-d=".55" style="top:520px">¿Vas a Baby Beach?</div>
+    <div class="el card" data-a="card" data-d=".7" data-r="-4" style="left:90px;top:700px;width:900px;height:620px"><img src="../assets/beach-baby-beach.webp"></div>
+    <div class="el card" data-a="card" data-d="1.1" data-r="6" style="left:560px;top:1250px;width:420px;height:500px"><img src="../assets/beach-rodgers.webp"></div>
+    <div class="el sticker" data-a="pop" data-d="1.5" style="left:100px;top:1430px">+ RODGERS BEACH</div>
+  </section>
+
+  <!-- 2 Stop at Colony -->
+  <section class="scene" data-start="3.6" data-end="7">
+    <div class="el h1" data-a="up" data-d=".1" style="top:170px">STOP AT<br><span class="y">COLONY</span><br>FIRST!</div>
+    <div class="el sub" data-a="up" data-d=".45" style="top:530px">¡Pasa primero por Colony!</div>
+    <div class="el card" data-a="card" data-d=".55" data-r="3" style="left:70px;top:700px;width:940px;height:740px"><img src="../assets/colony-sign.jpeg"></div>
+    <div class="el sticker coral" data-a="pop" data-d="1.2" style="left:150px;top:1500px">5 MIN FROM THE BEACH</div>
+    <div class="el sub" data-a="up" data-d="1.4" style="top:1640px;font-size:50px">A 5 minutos de la playa</div>
+  </section>
+
+  <!-- 3 Cold drinks -->
+  <section class="scene" data-start="7" data-end="10.4">
+    <div class="el h1" data-a="up" data-d=".1" style="top:150px">ICE-COLD<br><span class="y">DRINKS & BEER</span></div>
+    <div class="el sub" data-a="up" data-d=".4" style="top:400px">Bebidas y cerveza fría</div>
+    <div class="el card" data-a="card" data-d=".5" data-r="-3" style="left:130px;top:560px;width:820px;height:1180px"><img src="../assets/fridges.jpg" style="object-position:center 30%"></div>
+    <div class="el sticker" data-a="pop" data-d="1.1" style="left:600px;top:1640px">❄ SUPER COLD</div>
+  </section>
+
+  <!-- 4 Ice -->
+  <section class="scene" data-start="10.4" data-end="13.4">
+    <div class="el h1" data-a="up" data-d=".1" style="top:170px">BAGS OF<br><span class="y">ICE</span></div>
+    <div class="el sub" data-a="up" data-d=".4" style="top:420px">Bolsas de hielo para tu cooler</div>
+    <div class="el card" data-a="card" data-d=".5" data-r="4" style="left:170px;top:580px;width:740px;height:1100px"><img src="../assets/ice-bags.jpeg"></div>
+    <div class="el sticker coral" data-a="pop" data-d="1" style="left:80px;top:1600px">FOR YOUR COOLER</div>
+  </section>
+
+  <!-- 5 Snacks & ice cream -->
+  <section class="scene" data-start="13.4" data-end="16.8">
+    <div class="el h1" data-a="up" data-d=".1" style="top:150px;font-size:100px">SNACKS, CANDY<br><span class="y">& ICE CREAM</span></div>
+    <div class="el sub" data-a="up" data-d=".4" style="top:390px">Snacks, dulces y helados</div>
+    <div class="el card" data-a="card" data-d=".5" data-r="-5" style="left:60px;top:560px;width:720px;height:620px"><img src="../assets/candy-icecream.jpg"></div>
+    <div class="el card" data-a="card" data-d=".8" data-r="5" style="left:320px;top:1120px;width:700px;height:490px"><img src="../assets/shelf-snacks.jpg"></div>
+    <div class="el sticker" data-a="pop" data-d="1.2" style="left:90px;top:1680px">🍦 YUM!</div>
+  </section>
+
+  <!-- 6 Beach gear & souvenirs -->
+  <section class="scene" data-start="16.8" data-end="20.2">
+    <div class="el h1" data-a="up" data-d=".1" style="top:150px;font-size:100px">SUNSCREEN<br><span class="y">& SOUVENIRS</span></div>
+    <div class="el sub" data-a="up" data-d=".4" style="top:390px">Protector solar y recuerdos de Aruba</div>
+    <div class="el card" data-a="card" data-d=".5" data-r="4" style="left:420px;top:560px;width:600px;height:740px"><img src="../assets/beach-banana-boat-hd.jpg"></div>
+    <div class="el card" data-a="card" data-d=".8" data-r="-5" style="left:60px;top:1150px;width:700px;height:490px"><img src="../assets/souvenirs-2.jpg"></div>
+    <div class="el sticker coral" data-a="pop" data-d="1.2" style="left:560px;top:1700px">☀ BEACH DAY</div>
+  </section>
+
+  <!-- 7 Locals -->
+  <section class="scene" data-start="20.2" data-end="23.8">
+    <div class="el kicker" data-a="drop" data-d=".1" style="top:150px">LIVE NEARBY? · ¿VIVES CERCA?</div>
+    <div class="el h1" data-a="up" data-d=".25" style="top:270px;font-size:96px">EVERYDAY<br><span class="y">BASICS</span></div>
+    <div class="el sub" data-a="up" data-d=".5" style="top:500px">Huevos, queso, galletas y lo básico de todos los días</div>
+    <div class="el card" data-a="card" data-d=".6" data-r="-3" style="left:60px;top:720px;width:960px;height:560px"><img src="../assets/store-shelves.jpeg"></div>
+    <div class="el sticker" data-a="pop" data-d="1.1" style="left:140px;top:1380px">🛵 WE DELIVER!</div>
+    <div class="el sub" data-a="up" data-d="1.3" style="top:1520px;font-size:52px">¡Hacemos delivery! Pide por WhatsApp</div>
+  </section>
+
+  <!-- 8 Owners -->
+  <section class="scene" data-start="23.8" data-end="27">
+    <div class="el h1" data-a="up" data-d=".1" style="top:150px;font-size:96px">BOB & SHA<br><span class="y">WELCOME YOU</span></div>
+    <div class="el sub" data-a="up" data-d=".4" style="top:380px">Bob y Sha te esperan</div>
+    <div class="el card" data-a="card" data-d=".5" data-r="3" style="left:190px;top:520px;width:700px;height:700px"><img src="../assets/owners.jpg"></div>
+    <div class="el stars" data-a="pop" data-d=".9" style="top:1270px">★★★★★</div>
+    <div class="el quote" data-a="up" data-d="1.2" style="top:1420px">“A tiny gem 5 min away from Baby Beach!”<br><span style="font-size:36px;color:#0E7C73">— Google review</span></div>
+  </section>
+
+  <!-- 9 End card -->
+  <section class="scene" data-start="27" data-end="32">
+    <div class="el" data-a="pop" data-d=".1" style="left:240px;top:110px;width:600px;height:518px"><img src="../assets/colony-logo.png" style="width:100%;filter:drop-shadow(0 12px 0 rgba(11,59,57,.55))"></div>
+    <div class="el sub" data-a="up" data-d=".4" style="top:660px;font-family:Bungee;font-size:58px;color:#fff">YOUR BEACH STOP</div>
+    <div class="el sub" data-a="up" data-d=".55" style="top:740px;font-size:48px">Tu parada antes de la playa</div>
+    <div class="el info" data-a="up" data-d=".75" style="top:860px">
+      <div class="row"><span class="ic">📍</span><span><b>SEROE COLORADO 1525</b><br>San Nicolas, Aruba</span></div>
+      <div class="row"><span class="ic">🏖</span><span>5 min · Baby Beach & Rodgers Beach</span></div>
+      <div class="row"><span class="ic">🕚</span><span><b>OPEN DAILY 11:00–20:00</b><br>Abierto todos los días</span></div>
+    </div>
+    <div class="el wa" data-a="pop" data-d="1.2" style="top:1390px">WHATSAPP<small>+297 748 3926</small></div>
+    <div class="el sub" data-a="up" data-d="1.5" style="top:1600px;font-size:46px">colonyfoodmart.vercel.app</div>
+  </section>
+</div>
+<script>
+const clamp=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const easeOut=x=>1-Math.pow(1-x,3);
+const back=x=>{const c=1.9;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+const scenes=[...document.querySelectorAll('.scene')].map(s=>({s,a:+s.dataset.start,b:+s.dataset.end,els:[...s.querySelectorAll('.el')]}));
+const sun=document.getElementById('sun'),w1=document.getElementById('wave1'),w2=document.getElementById('wave2');
+window.TOTAL=32;
+window.render=function(t){
+  sun.style.left=(-330+Math.sin(t*.35)*50)+'px';sun.style.top=(1380+Math.cos(t*.3)*40)+'px';
+  w1.style.top='1740px';w1.style.transform=`translateX(${Math.sin(t*1.1)*50}px)`;
+  w2.style.top='1780px';w2.style.transform=`translateX(${Math.cos(t*.9)*60}px)`;
+  for(const sc of scenes){
+    const lt=t-sc.a, last=sc===scenes[scenes.length-1];
+    const fadeOut=last?1:clamp((sc.b-t)/.3);
+    const vis=t>=sc.a-0.001&&t<sc.b;
+    sc.s.style.opacity=vis?fadeOut:0;
+    if(!vis)continue;
+    const outShift=last?0:(1-fadeOut)*-80;
+    for(const e of sc.els){
+      const p=clamp((lt-(+e.dataset.d||0))/.45), a=e.dataset.a, r=+(e.dataset.r||0);
+      let tr='',op=clamp(p*2.5);
+      if(a==='up')tr=`translateY(${(1-easeOut(p))*90}px)`;
+      else if(a==='drop')tr=`translateX(-50%) translateY(${(1-easeOut(p))*-70}px)`;
+      else if(a==='pop')tr=`scale(${p<=0?0:back(p)})`;
+      else if(a==='card'){const fl=Math.sin((lt)*1.6+r)*1.2;tr=`translateY(${(1-easeOut(p))*260}px) rotate(${r*(0.4+0.6*easeOut(p))+fl}deg) scale(${0.85+0.15*easeOut(p)})`;
+        const img=e.querySelector('img');if(img)img.style.transform=`scale(${1.04+lt*.025})`;}
+      e.style.opacity=op;e.style.transform=`translateY(${outShift}px) `+tr;
+    }
+  }
+};
+render(0);
+</script>
+</body>
+</html>
